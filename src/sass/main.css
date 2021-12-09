@@ -99,4 +99,11 @@ img {
     padding-right: 115px;
   }
 }
+
+.section__gallery {
+  width: 364px;
+  height: 122px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #E5E5E5), to(#FFF5F6));
+  background-image: linear-gradient(to top, #E5E5E5 60%, #FFF5F6);
+}
 /*# sourceMappingURL=main.css.map */
