@@ -3,32 +3,6 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
-}
-
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
 body {
   background-color: #ffffff;
   color: #000000;
@@ -98,6 +72,280 @@ img {
     padding-left: 115px;
     padding-right: 115px;
   }
+}
+
+.section__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%px;
+  height: 122px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #E5E5E5), color-stop(60%, #FFF5F6), to(#fff5f6));
+  background-image: linear-gradient(to top, #E5E5E5 60%, #FFF5F6 60%, #fff5f6);
+}
+
+.section__gallery_img {
+  width: 320px;
+  height: 100%;
+  background-image: url("../images/gallery/gallery-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+
+@media screen and (min-width: 768px) {
+  .section__gallery {
+    width: 100%;
+    height: 264px;
+  }
+  .section__gallery_img {
+    width: 786px;
+    height: 264px;
+    background-image: url("../images/gallery/gallery-tablet.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__gallery {
+    width: 100%;
+    height: 430px;
+  }
+  .section__gallery_img {
+    width: 1200px;
+    height: 430px;
+    background-image: url("../images/gallery/gallery-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+  }
+}
+
+.reviews_entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 0;
+}
+
+.reviews__image {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__image {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews__image {
+    margin-bottom: 15px;
+  }
+}
+
+.reviews__card {
+  position: relative;
+  background-color: #fafafa;
+  padding: 45px 50px 20px 50px;
+  margin-bottom: 30px;
+}
+
+.reviews__card::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 54px;
+  height: 40px;
+  top: 28px;
+  left: 61px;
+  background: url("../images/customer-review/quotes.svg");
+  z-index: 33;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__card::before {
+    top: 30px;
+    left: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews__card::before {
+    top: 32px;
+    left: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__card {
+    max-width: 620px;
+    padding: 45px 35px 30px 60px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews__card {
+    max-width: 926px;
+    padding: 45px 55px 30px 60px;
+  }
+}
+
+.reviews__text {
+  position: relative;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  color: #000000;
+  padding: 0 15px;
+  z-index: 44;
+  background: repeating-linear-gradient(transparent, transparent 29px, #e1e1e1 29px, #e1e1e1 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__text {
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+    background: repeating-linear-gradient(transparent, transparent 28px, #e1e1e1 28px, #e1e1e1 29px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews__text {
+    font-size: 16px;
+    line-height: 1.86;
+    padding: 0 30px;
+  }
+}
+
+.reviews__dot {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  background-color: #d41443;
+}
+
+.reviews__dot::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  left: -14px;
+  background-color: #d41443;
+}
+
+.reviews__dot::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  right: -14px;
+  background-color: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__dot {
+    margin-bottom: 15px;
+  }
+}
+
+.reviews__name {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__name {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews__name {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul.slick-dots {
+  margin: 0;
+  padding: 0;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: url("../images/customer-review/home.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .background-contact {
@@ -401,8 +649,6 @@ img {
 }
 
 .contacts__buttons {
-  border: none;
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,6 +674,8 @@ img {
 }
 
 .contacts__btn {
+  border: none;
+  cursor: pointer;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -505,60 +753,5 @@ img {
 .btn-icon {
   margin-top: 2px;
   margin-left: 12px;
-}
-
-.section__gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%px;
-  height: 122px;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #E5E5E5), color-stop(60%, #FFF5F6), to(#fff5f6));
-  background-image: linear-gradient(to top, #E5E5E5 60%, #FFF5F6 60%, #fff5f6);
-}
-
-.section__gallery_img {
-  width: 320px;
-  height: 100%;
-  background-image: url("../images/gallery/gallery-mobile.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center, center;
-}
-
-@media screen and (min-width: 768px) {
-  .section__gallery {
-    width: 100%;
-    height: 264px;
-  }
-  .section__gallery_img {
-    width: 786px;
-    height: 264px;
-    background-image: url("../images/gallery/gallery-tablet.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center, center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section__gallery {
-    width: 100%;
-    height: 430px;
-  }
-  .section__gallery_img {
-    width: 1200px;
-    height: 430px;
-    background-image: url("../images/gallery/gallery-desktop.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center, center;
-  }
 }
 /*# sourceMappingURL=main.css.map */
