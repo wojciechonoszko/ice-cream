@@ -86,8 +86,8 @@ img {
           justify-content: center;
   width: 100%px;
   height: 122px;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #E5E5E5), color-stop(60%, #FFF5F6), to(#fff5f6));
-  background-image: linear-gradient(to top, #E5E5E5 60%, #FFF5F6 60%, #fff5f6);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #ffffff), color-stop(60%, #FFF5F6), to(#fff5f6));
+  background-image: linear-gradient(to top, #ffffff 60%, #FFF5F6 60%, #fff5f6);
 }
 
 .section__gallery_img {
