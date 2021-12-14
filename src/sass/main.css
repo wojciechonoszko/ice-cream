@@ -3,6 +3,19 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+
+ :root {
+  --main-font: 'DM Sans', sans-serif;
+  --secondary-font: 'Titan One', sans-serif;
+  --secondary-color: #d41443;
+  --first-background-color: #ffb8ca;
+  --menu-background: #e17992;
+  --white-color: #ffffff;
+  --time-table-color: #ffa5ba;
+  --mobile-menu-border: #e18298;
+  --btn-color: #ECEBEB;
+}
+
 body {
   background-color: #ffffff;
   color: #000000;
