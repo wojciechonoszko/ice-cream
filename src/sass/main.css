@@ -3,19 +3,6 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-
- :root {
-  --main-font: 'DM Sans', sans-serif;
-  --secondary-font: 'Titan One', sans-serif;
-  --secondary-color: #d41443;
-  --first-background-color: #ffb8ca;
-  --menu-background: #e17992;
-  --white-color: #ffffff;
-  --time-table-color: #ffa5ba;
-  --mobile-menu-border: #e18298;
-  --btn-color: #ECEBEB;
-}
-
 body {
   background-color: #ffffff;
   color: #000000;
@@ -90,6 +77,11 @@ img {
 .section {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.section-header {
+  background-color: #ffb8ca;
+  overflow: hidden;
 }
 
 .section--no-padding-top {
@@ -1191,12 +1183,12 @@ footer {
 
 /* ===========  BURGER ========= */
 .navbar {
-  font-family: var(--main-font);
+  font-family: 'DM Sans', sans-serif;
   width: 250px;
   height: 100%;
   position: fixed;
   top: 0;
-  background: var(--menu-background);
+  background: #e17992;
   right: -100%;
   -webkit-transition: right 0.8s cubic-bezier(1, 0, 0, 1);
   transition: right 0.8s cubic-bezier(1, 0, 0, 1);
@@ -1236,7 +1228,7 @@ footer {
 .hamburger-menu--opened .line-1 {
   -webkit-transform: rotateZ(-405deg) translate(-4px, 4px);
           transform: rotateZ(-405deg) translate(-4px, 4px);
-  background-color: var(--white-color);
+  background-color: #ffffff;
 }
 
 .hamburger-menu--opened .line-2 {
@@ -1246,7 +1238,7 @@ footer {
 .hamburger-menu--opened .line-3 {
   -webkit-transform: rotateZ(405deg) translate(-5px, -5px);
           transform: rotateZ(405deg) translate(-5px, -5px);
-  background-color: var(--white-color);
+  background-color: #ffffff;
 }
 
 /* ===========  BURGER END ========= */
@@ -1280,8 +1272,8 @@ footer {
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
-  color: var(--secondary-color);
-  background-color: var(--white-color);
+  color: #d41443;
+  background-color: #ffffff;
   border: none;
   border-radius: 22px;
   padding-left: 60px;
@@ -1293,7 +1285,7 @@ footer {
 
 .navigation__button::after {
   content: '';
-  border: 1px solid var(--mobile-menu-border);
+  border: 1px solid #e18298;
   width: 250px;
   position: absolute;
   left: 0px;
@@ -1308,24 +1300,24 @@ footer {
 }
 
 .navigation__button:hover {
-  background-color: var(--btn-color);
+  background-color: #ECEBEB;
 }
 
 .navigation .navigation__link {
   text-decoration: none;
-  color: var(--white-color);
+  color: #ffffff;
   position: relative;
   font-size: 14px;
   line-height: 18px;
 }
 
 .navigation .navigation__link:hover, .navigation .navigation__link:focus {
-  color: var(--secondary-color);
+  color: #d41443;
 }
 
 .navigation .navigation__link::after {
   content: '';
-  border: 1px solid var(--mobile-menu-border);
+  border: 1px solid #e18298;
   width: 250px;
   position: absolute;
   left: -20px;
@@ -1340,18 +1332,18 @@ footer {
 }
 
 .hero__header {
-  font-family: var(--secondary-font);
+  font-family: 'Titan One', sans-serif;
   font-size: 26px;
   line-height: 30px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--white-color);
+  color: #ffffff;
   padding-top: 137px;
   padding-right: 62px;
 }
 
 .hero__header--dark {
-  color: var(--secondary-color);
+  color: #d41443;
   line-height: 50px;
   font-size: 48px;
 }
@@ -1367,24 +1359,24 @@ footer {
   border-radius: 20px;
   font-size: 8px;
   line-height: 10px;
-  color: var(--secondary-color);
-  background-color: var(--white-color);
+  color: #d41443;
+  background-color: #ffffff;
   border: none;
   cursor: pointer;
 }
 
 .hero__btn:hover {
-  background-color: var(--btn-color);
+  background-color: #ECEBEB;
 }
 
 .hero__btn--dark {
   margin-right: 8px;
-  background-color: var(--secondary-color);
-  color: var(--white-color);
+  background-color: #d41443;
+  color: #ffffff;
 }
 
 .hero__btn--dark:hover {
-  background-color: var(--dots-color);
+  background-color: #c7133e;
 }
 
 .hero__link {
@@ -1406,7 +1398,7 @@ footer {
   width: 346px;
   height: 346px;
   border-radius: 50%;
-  background-color: var(--time-table-color);
+  background-color: #ffa5ba;
   z-index: -2;
 }
 
@@ -1450,8 +1442,8 @@ footer {
     font-size: 16px;
     font-weight: bold;
     line-height: 21px;
-    color: var(--secondary-color);
-    background-color: var(--white-color);
+    color: #d41443;
+    background-color: #ffffff;
     border: none;
     border-radius: 22px;
     padding-left: 37px;
@@ -1465,12 +1457,12 @@ footer {
   .hamburger-menu--opened .line-1 {
     -webkit-transform: rotateZ(-405deg) translate(-4px, 4px) translateY(110px) translateX(165px);
             transform: rotateZ(-405deg) translate(-4px, 4px) translateY(110px) translateX(165px);
-    background-color: var(--white-color);
+    background-color: #ffffff;
   }
   .hamburger-menu--opened .line-3 {
     -webkit-transform: rotateZ(405deg) translate(-5px, -5px) translateY(-165px) translateX(110px);
             transform: rotateZ(405deg) translate(-5px, -5px) translateY(-165px) translateX(110px);
-    background-color: var(--white-color);
+    background-color: #ffffff;
   }
   .hero {
     position: relative;
@@ -1481,13 +1473,13 @@ footer {
     line-height: 1.136;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: #ffffff;
     padding-top: 15px;
     padding-right: 0px;
     max-width: 162px;
   }
   .hero__header--dark {
-    color: var(--secondary-color);
+    color: #d41443;
     line-height: 30px;
     font-size: 35px;
   }
@@ -1497,11 +1489,11 @@ footer {
   }
   .hero__btn--dark {
     margin-right: 8px;
-    background-color: var(--secondary-color);
-    color: var(--white-color);
+    background-color: #d41443;
+    color: #ffffff;
   }
   .hero__btn--dark:hover {
-    background-color: var(--dots-color);
+    background-color: #c7133e;
   }
   .hero__img {
     position: absolute;
@@ -1535,10 +1527,10 @@ footer {
     position: absolute;
     left: 120px;
     bottom: 34px;
-    font-family: var(--main-font);
+    font-family: 'DM Sans', sans-serif;
     font-size: 8px;
     line-height: 1.5;
-    color: var(--white-color);
+    color: #ffffff;
     max-width: 114px;
   }
   .hero__img-arrow-right {
@@ -1553,10 +1545,10 @@ footer {
     top: 9px;
   }
   .offer__number {
-    font-family: var(--secondary-font);
+    font-family: 'Titan One', sans-serif;
     font-size: 28px;
     line-height: 1.142;
-    color: var(--secondary-color);
+    color: 'Titan One', sans-serif;
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -1575,10 +1567,10 @@ footer {
     z-index: -1;
   }
   .offer__description {
-    font-family: var(--main-font);
+    font-family: 'DM Sans', sans-serif;
     font-size: 8px;
     line-height: 1.25;
-    color: var(--white-color);
+    color: #ffffff;
     text-align: right;
     margin-bottom: 14px;
   }
@@ -1595,7 +1587,7 @@ footer {
   }
   .navbar {
     position: initial;
-    background-color: var(--first-background-color);
+    background-color: #ffb8ca;
     width: 0px;
   }
   .header__logo {
@@ -1647,7 +1639,7 @@ footer {
     max-width: 277px;
   }
   .hero__header--dark {
-    color: var(--secondary-color);
+    color: #d41443;
     line-height: 49px;
     font-size: 59px;
   }
@@ -1660,11 +1652,11 @@ footer {
   }
   .hero__btn--dark {
     margin-right: 8px;
-    background-color: var(--secondary-color);
-    color: var(--white-color);
+    background-color: #d41443;
+    color: #ffffff;
   }
   .hero__btn--dark:hover {
-    background-color: var(--dots-color);
+    background-color: #c7133e;
   }
   .hero__img {
     position: absolute;
@@ -1700,7 +1692,7 @@ footer {
     bottom: 51px;
     font-size: 14px;
     line-height: 1.428;
-    color: var(--white-color);
+    color: #ffffff;
     max-width: 200px;
   }
   .hero__img-arrow-right {
@@ -1715,10 +1707,10 @@ footer {
     top: 9px;
   }
   .offer__number {
-    font-family: var(--secondary-font);
+    font-family: 'Titan One', sans-serif;
     font-size: 46px;
     line-height: 1.152;
-    color: var(--secondary-color);
+    color: #d41443;
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -1737,10 +1729,10 @@ footer {
     z-index: -1;
   }
   .offer__description {
-    font-family: var(--main-font);
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     line-height: 1.25;
-    color: var(--white-color);
+    color: #ffffff;
     text-align: right;
     margin-bottom: 18px;
   }
