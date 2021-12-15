@@ -4,15 +4,23 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './utils/variables';
 @import './utils/breakpoints';
+@import './utils/variables';
+
+
 @import './base/base';
 @import './base/container';
 @import './base/section';
-@import "./components/products";
+
+
+// @import './example';
+@import './components/header';
+@import './components/products';
 @import './components/about';
+@import './components/advantages';
 @import './components/gallery';
 @import './components/review';
 @import './components/contacts';
-@import "./components/footer";
-@import "./components/header";
+@import './components/footer';
+
+
